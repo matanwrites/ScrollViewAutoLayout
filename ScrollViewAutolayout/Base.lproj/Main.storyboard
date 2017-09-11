@@ -160,26 +160,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="300" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jE1-1U-0gM">
-                                <rect key="frame" x="137.5" y="50" width="25" height="900"/>
-                                <accessibility key="accessibilityConfiguration" hint="RedTextFieldHint" identifier="RedTextFieldIdentifier" label="RedTextFieldLabel"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="hYT-Xz-Taq">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="yK9-BG-qKz"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Oby-Yf-68F" userLabel="profile_background">
+                                <rect key="frame" x="0.0" y="200" width="300" height="800"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Sfj-vZ-q2G">
+                                <rect key="frame" x="20" y="180" width="260" height="780"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Hi, my name is Loren and this is my story.  Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.2198562054" blue="0.115617099" alpha="1" colorSpace="calibratedRGB"/>
                         <accessibility key="accessibilityConfiguration" hint="RedViewHint" identifier="RedViewIdentifier" label="RedViewLabel"/>
                         <constraints>
-                            <constraint firstItem="HsU-zu-u69" firstAttribute="top" secondItem="jE1-1U-0gM" secondAttribute="bottom" constant="50" identifier="redTextFieldBot" id="2dL-sR-gxx"/>
-                            <constraint firstItem="jE1-1U-0gM" firstAttribute="centerX" secondItem="6MZ-Vb-isi" secondAttribute="centerX" identifier="redTextFieldCenterX" id="NYW-cl-gep"/>
-                            <constraint firstItem="jE1-1U-0gM" firstAttribute="top" secondItem="myg-OV-1ui" secondAttribute="bottom" constant="50" identifier="redTextFieldTop" id="hke-yG-HT8"/>
+                            <constraint firstItem="HsU-zu-u69" firstAttribute="top" secondItem="Sfj-vZ-q2G" secondAttribute="bottom" constant="40" id="05r-YR-NXs"/>
+                            <constraint firstItem="Oby-Yf-68F" firstAttribute="trailing" secondItem="hYT-Xz-Taq" secondAttribute="trailing" id="4Ve-Ye-w5Y"/>
+                            <constraint firstItem="Oby-Yf-68F" firstAttribute="leading" secondItem="hYT-Xz-Taq" secondAttribute="leading" id="D9i-Xm-cP0"/>
+                            <constraint firstAttribute="trailing" secondItem="hYT-Xz-Taq" secondAttribute="trailing" id="WM7-sh-0dw"/>
+                            <constraint firstItem="Sfj-vZ-q2G" firstAttribute="top" secondItem="hYT-Xz-Taq" secondAttribute="bottom" constant="-20" id="eF4-Iy-xiN"/>
+                            <constraint firstAttribute="topMargin" secondItem="hYT-Xz-Taq" secondAttribute="top" id="hK2-dR-Z5P"/>
+                            <constraint firstItem="Sfj-vZ-q2G" firstAttribute="trailing" secondItem="hYT-Xz-Taq" secondAttribute="trailing" constant="-20" id="hT4-ta-OXc"/>
+                            <constraint firstItem="hYT-Xz-Taq" firstAttribute="leading" secondItem="6MZ-Vb-isi" secondAttribute="leading" id="ih8-eL-u1w"/>
+                            <constraint firstItem="Oby-Yf-68F" firstAttribute="top" secondItem="hYT-Xz-Taq" secondAttribute="bottom" id="oqz-Zf-FsI"/>
+                            <constraint firstItem="Sfj-vZ-q2G" firstAttribute="leading" secondItem="hYT-Xz-Taq" secondAttribute="leading" constant="20" id="uCR-lM-cVb"/>
+                            <constraint firstItem="HsU-zu-u69" firstAttribute="top" secondItem="Oby-Yf-68F" secondAttribute="bottom" id="xRu-vb-gRh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="avatar" destination="hYT-Xz-Taq" id="B2z-rQ-g1y"/>
+                        <outlet property="introText" destination="Sfj-vZ-q2G" id="HXq-oL-tpW"/>
+                        <outlet property="profileBackground" destination="Oby-Yf-68F" id="MLY-A7-uBA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="35H-YU-LGR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2013" y="125"/>
+            <point key="canvasLocation" x="-2013.28125" y="124.80468749999999"/>
         </scene>
         <!--Green View Controller-->
         <scene sceneID="gi6-jz-pLN">
@@ -193,28 +216,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="700" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9J1-up-eRn">
-                                <rect key="frame" x="337.5" y="400" width="25" height="300"/>
-                                <accessibility key="accessibilityConfiguration" hint="GreenTextFieldHint" identifier="GreenTextFieldIdentifier" label="GreenTextFieldLabel"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rWQ-qt-G77">
+                                <rect key="frame" x="70" y="20" width="560" height="671"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="landscape" translatesAutoresizingMaskIntoConstraints="NO" id="dH7-0d-hF5">
+                                        <rect key="frame" x="20" y="20" width="520" height="551"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="551" id="ucW-EU-iDY"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This picture is a memory of our trip in Incognito Land" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEF-aA-f3Y">
+                                        <rect key="frame" x="62.5" y="611" width="435" height="20"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="aEF-aA-f3Y" firstAttribute="leading" secondItem="rWQ-qt-G77" secondAttribute="leading" constant="62.5" id="73O-Tr-YiY"/>
+                                    <constraint firstAttribute="trailing" secondItem="aEF-aA-f3Y" secondAttribute="trailing" constant="62.5" id="HeQ-5l-gah"/>
+                                    <constraint firstItem="dH7-0d-hF5" firstAttribute="leading" secondItem="rWQ-qt-G77" secondAttribute="leading" constant="20" id="OT7-ib-rRx"/>
+                                    <constraint firstItem="aEF-aA-f3Y" firstAttribute="top" secondItem="dH7-0d-hF5" secondAttribute="bottom" constant="40" id="Pc9-7A-Ex1"/>
+                                    <constraint firstItem="dH7-0d-hF5" firstAttribute="top" secondItem="rWQ-qt-G77" secondAttribute="top" constant="20" id="XgQ-jf-y9Z"/>
+                                    <constraint firstItem="aEF-aA-f3Y" firstAttribute="centerX" secondItem="rWQ-qt-G77" secondAttribute="centerX" id="aUQ-2F-dan"/>
+                                    <constraint firstAttribute="trailing" secondItem="dH7-0d-hF5" secondAttribute="trailing" constant="20" id="hLB-ga-k6T"/>
+                                    <constraint firstAttribute="bottom" secondItem="dH7-0d-hF5" secondAttribute="bottom" constant="100" id="mT3-Fa-JKQ"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <accessibility key="accessibilityConfiguration" hint="GreenViewHint" identifier="GreenView" label="GreenViewLabel"/>
                         <constraints>
-                            <constraint firstItem="9J1-up-eRn" firstAttribute="centerX" secondItem="1Q6-4M-QUO" secondAttribute="centerX" id="EKX-SI-qIs"/>
-                            <constraint firstItem="2dn-cn-bkH" firstAttribute="top" secondItem="9J1-up-eRn" secondAttribute="bottom" constant="300" id="N0v-Cm-jLg"/>
-                            <constraint firstItem="9J1-up-eRn" firstAttribute="top" secondItem="eez-qh-KuH" secondAttribute="bottom" constant="400" id="pwb-Sh-tgT"/>
+                            <constraint firstItem="rWQ-qt-G77" firstAttribute="top" secondItem="1Q6-4M-QUO" secondAttribute="topMargin" constant="20" id="NLx-wp-OsK"/>
+                            <constraint firstItem="rWQ-qt-G77" firstAttribute="width" secondItem="1Q6-4M-QUO" secondAttribute="width" multiplier="0.8" id="bMa-mH-RXD"/>
+                            <constraint firstItem="rWQ-qt-G77" firstAttribute="centerX" secondItem="1Q6-4M-QUO" secondAttribute="centerX" id="cOZ-Ke-WZz"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zpY-lB-Dl6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-709" y="781"/>
+            <point key="canvasLocation" x="-709.375" y="780.46875"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="landscape" width="4896" height="3264"/>
+        <image name="profile" width="5473" height="4038"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="dmx-KE-KaB"/>
         <segue reference="jUb-rz-R84"/>
