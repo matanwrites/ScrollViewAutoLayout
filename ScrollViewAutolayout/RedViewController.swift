@@ -9,9 +9,8 @@
 import UIKit
 
 class RedViewController : UIViewController {
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func willMove(toParentViewController parent: UIViewController?) {
+        super.willMove(toParentViewController: parent)
         
         view.translatesAutoresizingMaskIntoConstraints = false
     }
