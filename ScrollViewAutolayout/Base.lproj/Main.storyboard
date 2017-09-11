@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad9_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -24,13 +25,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xay-Nz-STb">
-                                <rect key="frame" x="0.0" y="20" width="320" height="980"/>
+                                <rect key="frame" x="0.0" y="20" width="1000" height="980"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i7W-aJ-Gw4">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1189"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1098"/>
                                         <subviews>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8gJ-Wn-y0n">
-                                                <rect key="frame" x="0.0" y="58" width="320" height="500"/>
+                                                <rect key="frame" x="0.0" y="58" width="1000" height="500"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="500" placeholder="YES" id="OSv-cS-Iee"/>
                                                 </constraints>
@@ -39,7 +40,7 @@
                                                 </connections>
                                             </containerView>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Bt-7w-hvl">
-                                                <rect key="frame" x="0.0" y="689" width="320" height="500"/>
+                                                <rect key="frame" x="0.0" y="598" width="1000" height="500"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="500" placeholder="YES" id="Ph3-JL-0nY"/>
                                                 </constraints>
@@ -52,7 +53,7 @@
                                         <constraints>
                                             <constraint firstItem="0Bt-7w-hvl" firstAttribute="leading" secondItem="i7W-aJ-Gw4" secondAttribute="leading" id="7DI-rf-IaG"/>
                                             <constraint firstItem="8gJ-Wn-y0n" firstAttribute="top" secondItem="i7W-aJ-Gw4" secondAttribute="top" constant="58" id="BOC-aU-GhJ"/>
-                                            <constraint firstItem="0Bt-7w-hvl" firstAttribute="top" secondItem="8gJ-Wn-y0n" secondAttribute="bottom" constant="131" id="DWj-g5-1P1"/>
+                                            <constraint firstItem="0Bt-7w-hvl" firstAttribute="top" secondItem="8gJ-Wn-y0n" secondAttribute="bottom" constant="40" id="DWj-g5-1P1"/>
                                             <constraint firstAttribute="trailing" secondItem="0Bt-7w-hvl" secondAttribute="trailing" id="HSX-nM-1eY"/>
                                             <constraint firstItem="8gJ-Wn-y0n" firstAttribute="leading" secondItem="i7W-aJ-Gw4" secondAttribute="leading" id="KfR-Pi-pn9"/>
                                             <constraint firstAttribute="trailing" secondItem="8gJ-Wn-y0n" secondAttribute="trailing" id="O7Q-gF-RIr"/>
@@ -160,8 +161,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="300" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jE1-1U-0gM">
-                                <rect key="frame" x="137.5" y="50" width="25" height="900"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="View whose height is textField.height + 2x50" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jE1-1U-0gM">
+                                <rect key="frame" x="-5" y="50" width="310" height="900"/>
                                 <accessibility key="accessibilityConfiguration" hint="RedTextFieldHint" identifier="RedTextFieldIdentifier" label="RedTextFieldLabel"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -193,8 +194,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="700" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9J1-up-eRn">
-                                <rect key="frame" x="337.5" y="400" width="25" height="300"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="View whose height is textField.height + 2x200" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9J1-up-eRn">
+                                <rect key="frame" x="190.66666666666663" y="200" width="319" height="600"/>
                                 <accessibility key="accessibilityConfiguration" hint="GreenTextFieldHint" identifier="GreenTextFieldIdentifier" label="GreenTextFieldLabel"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -205,8 +206,8 @@
                         <accessibility key="accessibilityConfiguration" hint="GreenViewHint" identifier="GreenView" label="GreenViewLabel"/>
                         <constraints>
                             <constraint firstItem="9J1-up-eRn" firstAttribute="centerX" secondItem="1Q6-4M-QUO" secondAttribute="centerX" id="EKX-SI-qIs"/>
-                            <constraint firstItem="2dn-cn-bkH" firstAttribute="top" secondItem="9J1-up-eRn" secondAttribute="bottom" constant="300" id="N0v-Cm-jLg"/>
-                            <constraint firstItem="9J1-up-eRn" firstAttribute="top" secondItem="eez-qh-KuH" secondAttribute="bottom" constant="400" id="pwb-Sh-tgT"/>
+                            <constraint firstItem="2dn-cn-bkH" firstAttribute="top" secondItem="9J1-up-eRn" secondAttribute="bottom" constant="200" id="N0v-Cm-jLg"/>
+                            <constraint firstItem="9J1-up-eRn" firstAttribute="top" secondItem="eez-qh-KuH" secondAttribute="bottom" constant="200" id="pwb-Sh-tgT"/>
                         </constraints>
                     </view>
                 </viewController>
