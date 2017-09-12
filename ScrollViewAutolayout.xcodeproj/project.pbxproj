@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		836637781F67C64B00046B61 /* IntroCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836637771F67C64B00046B61 /* IntroCard.swift */; };
 		83B40D9A1F2F1B6F00F88DDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B40D991F2F1B6F00F88DDF /* AppDelegate.swift */; };
 		83B40D9C1F2F1B6F00F88DDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B40D9B1F2F1B6F00F88DDF /* ViewController.swift */; };
 		83B40D9F1F2F1B6F00F88DDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B40D9D1F2F1B6F00F88DDF /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		836637771F67C64B00046B61 /* IntroCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroCard.swift; sourceTree = "<group>"; };
 		83B40D961F2F1B6F00F88DDF /* ScrollViewAutolayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollViewAutolayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B40D991F2F1B6F00F88DDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83B40D9B1F2F1B6F00F88DDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		836637731F67C5EE00046B61 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				83B40DA21F2F1B6F00F88DDF /* LaunchScreen.storyboard */,
+				83B40D9D1F2F1B6F00F88DDF /* Main.storyboard */,
+				836637771F67C64B00046B61 /* IntroCard.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		836637751F67C60200046B61 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				83B40DA01F2F1B6F00F88DDF /* Assets.xcassets */,
+				83B40DA51F2F1B6F00F88DDF /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		836637761F67C61900046B61 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				83B40D9B1F2F1B6F00F88DDF /* ViewController.swift */,
+				83B40DC91F2F200E00F88DDF /* RedViewController.swift */,
+				83B40DC71F2F1FF300F88DDF /* GreenViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		83B40D8D1F2F1B6F00F88DDF = {
 			isa = PBXGroup;
 			children = (
@@ -102,13 +133,9 @@
 			isa = PBXGroup;
 			children = (
 				83B40D991F2F1B6F00F88DDF /* AppDelegate.swift */,
-				83B40D9B1F2F1B6F00F88DDF /* ViewController.swift */,
-				83B40D9D1F2F1B6F00F88DDF /* Main.storyboard */,
-				83B40DA01F2F1B6F00F88DDF /* Assets.xcassets */,
-				83B40DA21F2F1B6F00F88DDF /* LaunchScreen.storyboard */,
-				83B40DA51F2F1B6F00F88DDF /* Info.plist */,
-				83B40DC71F2F1FF300F88DDF /* GreenViewController.swift */,
-				83B40DC91F2F200E00F88DDF /* RedViewController.swift */,
+				836637761F67C61900046B61 /* ViewControllers */,
+				836637731F67C5EE00046B61 /* UI */,
+				836637751F67C60200046B61 /* Resources */,
 			);
 			path = ScrollViewAutolayout;
 			sourceTree = "<group>";
@@ -269,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83B40DCA1F2F200E00F88DDF /* RedViewController.swift in Sources */,
+				836637781F67C64B00046B61 /* IntroCard.swift in Sources */,
 				83B40DC81F2F1FF300F88DDF /* GreenViewController.swift in Sources */,
 				83B40D9C1F2F1B6F00F88DDF /* ViewController.swift in Sources */,
 				83B40D9A1F2F1B6F00F88DDF /* AppDelegate.swift in Sources */,
@@ -524,6 +552,7 @@
 				83B40DC01F2F1B6F00F88DDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83B40DC11F2F1B6F00F88DDF /* Build configuration list for PBXNativeTarget "ScrollViewAutolayoutTests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +561,7 @@
 				83B40DC31F2F1B6F00F88DDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83B40DC41F2F1B6F00F88DDF /* Build configuration list for PBXNativeTarget "ScrollViewAutolayoutUITests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +570,7 @@
 				83B40DC61F2F1B6F00F88DDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
